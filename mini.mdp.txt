@@ -1,0 +1,18 @@
+; exemple fichier minimisation Gr5.0.7
+integrator = steep    ; algorithme de minimisation utilise
+                      ; ici : steepest descent
+emtol	   = 1000.0   ; critere de convergence (force maximum sur un atome)
+                      ; stop minimization when the maximum force < 1000.0 kJ/mol/nm
+emstep     = 0.01     ; pas pour commencer la minimisation (=1/10 angstrom)
+nsteps     = 5000     ; nombre de pas de minimisation
+;
+;
+nstlist         =  10     ; frequence de mise a jour de la liste des voisins
+                          ; ici tous les 10 pas
+cutoff-scheme   = Verlet
+ns_type         = grid
+coulombtype     = cutoff  ; methode de calcul des interactions electrostatiques
+rcoulomb        = 1.0     ; cutoff pour les interactions de Coulomb
+rvdw            = 1.0     ; cutoff pour les interactions de van der Waals
+pbc             = xyz     ; periodic boundary conditions
+

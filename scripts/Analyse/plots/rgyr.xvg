@@ -1,0 +1,29 @@
+# This file was created Thu Jan 26 00:32:35 2023
+# Created by:
+#                      :-) GROMACS - gmx gyrate, 2020.5 (-:
+# 
+# Executable:   /usr/local/gromacs2020.5/bin/gmx
+# Data prefix:  /usr/local/gromacs2020.5
+# Working dir:  /home/bio8/Projet/results_MODLER_2/best/Results_dynamique/testing_prod
+# Command line:
+#   gmx gyrate -f md_prod.xtc -s md_prod.tpr -o rgyr.xvg
+# gmx gyrate is part of G R O M A C S:
+#
+# GROtesk MACabre and Sinister
+#
+@    title "Radius of gyration (total and around axes)"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "Rg (nm)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Rg"
+@ s1 legend "Rg\sX\N"
+@ s2 legend "Rg\sY\N"
+@ s3 legend "Rg\sZ\N"
+         0     3.25563     2.87868     2.11028      2.9083
+       100     3.31747     2.96168     2.13497     2.94645
