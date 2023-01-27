@@ -1,0 +1,20 @@
+# Conjugate gradients optimization
+#  Step   Current energy Av shift Mx shift   Funcs         Gradient
+      0    6072890.50000   0.0000   0.0000       1      2.96055e+10
+     10      56012.26953   0.0643   0.8601      21      1.41874e+07
+     20      24829.96094   0.1074   0.3474      41      3.22374e+06
+     30      15611.33203   0.0574   0.2607      61      1.70865e+06
+     40      10222.83496   0.0625   0.2264      81           770479
+     50       7267.98584   0.0616   0.1953     101           463559
+     60       6041.25049   0.0447   0.1817     122           268406
+     70       5030.76367   0.0523   0.2051     142           248922
+     80       4060.08301   0.0374   0.1726     162           202142
+     90       3388.41040   0.0157   0.0704     183          92792.5
+     99       3044.69971   0.0349   0.1335     201          78758.9
+# Conjugate gradients optimization
+#  Step   Current energy Av shift Mx shift   Funcs         Gradient
+      0  218962880.00000   0.0000   0.0000       1       7.5157e+19
+      1             -nan   0.0000   0.0000     201       7.5157e+19
+# Conjugate gradients optimization
+#  Step   Current energy Av shift Mx shift   Funcs         Gradient
+      0             -nan   0.0000   0.0000       1             -nan
