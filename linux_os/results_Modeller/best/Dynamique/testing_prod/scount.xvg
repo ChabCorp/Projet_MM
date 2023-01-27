@@ -1,0 +1,36 @@
+# This file was created Fri Jan 27 18:08:25 2023
+# Created by:
+#                     :-) GROMACS - gmx do_dssp, 2020.5 (-:
+# 
+# Executable:   /usr/local/gromacs2020.5/bin/gmx
+# Data prefix:  /usr/local/gromacs2020.5
+# Working dir:  /home/bio8/Projet/results_MODLER_2/best2/Dynamique/testing_prod
+# Command line:
+#   gmx do_dssp -f md_prod.xtc -s md_prod.tpr -o ss -tu ns
+# gmx do_dssp is part of G R O M A C S:
+#
+# Green Red Orange Magenta Azure Cyan Skyblue
+#
+@    title "Secondary Structure"
+@    xaxis  label "Time (ns)"
+@    yaxis  label "Number of Residues"
+@TYPE xy
+@ subtitle "Structure = A-Helix + B-Sheet + B-Bridge + Turn"
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Structure"
+@ s1 legend "Coil"
+@ s2 legend "B-Sheet"
+@ s3 legend "B-Bridge"
+@ s4 legend "Bend"
+@ s5 legend "Turn"
+@ s6 legend "A-Helix"
+@ s7 legend "3-Helix"
+       0   362   185   107     4    84    80   171    36
+     0.1   343   201   103    14    84    85   141    39
+# Totals   705   386   210    18   168   165   312    75
+# SS pr.  0.53  0.29  0.16  0.01  0.13  0.12  0.23  0.06

@@ -1,0 +1,45 @@
+# This file was created Fri Jan 27 18:08:35 2023
+# Created by:
+#                       :-) GROMACS - gmx chi, 2020.5 (-:
+# 
+# Executable:   /usr/local/gromacs2020.5/bin/gmx
+# Data prefix:  /usr/local/gromacs2020.5
+# Working dir:  /home/bio8/Projet/results_MODLER_2/best2/Dynamique/testing_prod/chi
+# Command line:
+#   gmx chi -f md_prod.xtc -s md_prod.tpr -rama -maxchi 2
+# gmx chi is part of G R O M A C S:
+#
+# Gnomes, ROck Monsters And Chili Sauce
+#
+@    title "Ramachandran Plot"
+@    xaxis  label "\xf\f{} (deg)"
+@    yaxis  label "\xy\f{} (deg)"
+@TYPE xy
+@ with g0
+@ world xmin -180
+@ world ymin -180
+@ world xmax 180
+@ world ymax 180
+@ xaxis tick on
+@ xaxis tick major 90
+@ xaxis tick minor 30
+@ xaxis ticklabel prec 0
+@ yaxis tick on
+@ yaxis tick major 90
+@ yaxis tick minor 30
+@ yaxis ticklabel prec 0
+@    s0 type xy
+@    s0 symbol 2
+@    s0 symbol size 0.410000
+@    s0 symbol fill 1
+@    s0 symbol color 1
+@    s0 symbol linewidth 1
+@    s0 symbol linestyle 1
+@    s0 symbol center false
+@    s0 symbol char 0
+@    s0 skip 0
+@    s0 linestyle 0
+@    s0 linewidth 1
+@ type xy
+  -54.3832    -50.0131
+  -61.0046    -39.2065

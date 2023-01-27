@@ -1,0 +1,56 @@
+; define                  =  -DPOSRES           ; position restraints
+; voir dans le fichier de topologie la section DPOSRES qui renvoie au fichier itp
+; Run parameters
+integrator	            = md		          ; algorithme utilise : dynamique moleculaire
+nsteps		            = 50000 	          ; 0.02 * 50000 = 100 ns
+dt		                = 0.002		          ; 2 fs ; pas d'integration en ps
+tinit                   = 0.0                 ; temps de depart = 0 ps   
+; Output control
+nstxout		            = 50000		          ; save coordinates every 10.0 ps
+nstvout		            = 50000		          ; save velocities every 10.0 ps
+nstenergy	            = 5000		          ; save energies every 1.0 ps
+nstlog		            = 5000		          ; update log file every 1.0 ps
+nstfout                 =  0                  ; freq d'ecriture des forces (ici jamais)
+nstxout-compressed      =  50000               ; freq d'ecriture des positions des atomes dans le .xtc 
+compressed-x-precision  =  1000               ; niveau de precision pour l'ecriture dans les .xtc
+; Bond parameters
+continuation	        = yes		          ; first dynamics run
+constraint_algorithm    = lincs	              ; holonomic constraints 
+constraints	            = h-bonds	          ; contraintes sur les longueur de liaison
+lincs_iter	            = 1		              ; accuracy of LINCS
+lincs_order	            = 4		              ; also related to accuracy
+; Neighborsearching
+cutoff-scheme           = Verlet
+vdwtype			= cutoff
+rlist			= 1.2
+ns_type		            = grid		          ; search neighboring grid cells
+nstlist		            = 10		          ; 20 fs, largely irrelevant with Verlet
+rcoulomb	            = 1.2		          ; short-range electrostatic cutoff (in nm)
+rvdw		            = 1.2		          ; short-range van der Waals cutoff (in nm)
+; Electrostatics
+coulombtype	            = PME	              ; Particle Mesh Ewald for long-range electrostatics
+pme_order	            = 4		              ; cubic interpolation
+fourierspacing	        = 0.12	              ; grid spacing for FFT
+; Temperature coupling is on in 2 groups
+Tcoupl                  =  V-rescale          ; algo complage a la temperature
+tc-grps                 =  Protein  SOL_IONS    ; groupes pour les thermostats
+tau_t                   =  0.1      0.1       ; temps de couplage a la temperature (en ps)
+ref_t                   =  300      300       ; temperature de reference pour chaque groupe (en K)
+; Energy monitoring
+energygrps              =  Protein  SOL  ION   ; groupes pour les calculs d'energies
+; Pressure coupling is on
+Pcoupl                  =  Parrinello-Rahman          ; algo complage a la pression
+Pcoupltype              =  isotropic          ; Type de couplage (isotropic x, y, z)
+tau_p                   =  1.0                ; temps de couplage a la pression (en ps)
+compressibility         =  4.5e-5             ; compressibilite du milieu (ici l'eau) (en bar-1)
+ref_p                   =  1.0                ; pression de reference (en bar)
+; Periodic boundary conditions
+pbc		                = xyz		          ; 3-D PBC
+; Dispersion correction
+DispCorr	            = EnerPres	          ; account for cut-off vdW scheme
+; Generate velocites is on at 300 K.
+gen_vel                 =  no                ; initialisation des vitesses 
+                                              ; (suivant une distrib de Maxwell Boltzmann)
+gen_temp                =  300.0              ; temperature de la distribution
+gen_seed                =  -1                 ; graine aleatoire pour initialiser les vitesses
+

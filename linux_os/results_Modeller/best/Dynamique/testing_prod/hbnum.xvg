@@ -1,0 +1,27 @@
+# This file was created Fri Jan 27 18:08:34 2023
+# Created by:
+#                      :-) GROMACS - gmx hbond, 2020.5 (-:
+# 
+# Executable:   /usr/local/gromacs2020.5/bin/gmx
+# Data prefix:  /usr/local/gromacs2020.5
+# Working dir:  /home/bio8/Projet/results_MODLER_2/best2/Dynamique/testing_prod
+# Command line:
+#   gmx hbond -f md_prod.xtc -s md_prod.tpr -n index.ndx
+# gmx hbond is part of G R O M A C S:
+#
+# GRowing Old MAkes el Chrono Sweat
+#
+@    title "Hydrogen Bonds"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "Number"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Hydrogen bonds"
+@ s1 legend "Pairs within 0.35 nm"
+         0         370        2722
+       100         362        2550

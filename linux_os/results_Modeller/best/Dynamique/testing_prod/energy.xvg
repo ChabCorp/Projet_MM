@@ -1,0 +1,37 @@
+# This file was created Fri Jan 27 18:07:57 2023
+# Created by:
+#                      :-) GROMACS - gmx energy, 2020.5 (-:
+# 
+# Executable:   /usr/local/gromacs2020.5/bin/gmx
+# Data prefix:  /usr/local/gromacs2020.5
+# Working dir:  /home/bio8/Projet/results_MODLER_2/best2/Dynamique/testing_prod
+# Command line:
+#   gmx energy -f md_prod.edr -o energy.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Gnomes, ROck Monsters And Chili Sauce
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Potential"
+@ s1 legend "Kinetic En."
+@ s2 legend "Total Energy"
+    0.000000  -1558290.000000  296564.375000  -1261725.625000
+   10.000000  -1560519.125000  294583.375000  -1265935.750000
+   20.000000  -1561462.750000  295115.687500  -1266347.000000
+   30.000000  -1560516.875000  296338.312500  -1264178.500000
+   40.000000  -1562095.125000  294803.625000  -1267291.500000
+   50.000000  -1563920.000000  295726.375000  -1268193.625000
+   60.000000  -1561393.625000  295189.875000  -1266203.750000
+   70.000000  -1563308.125000  294945.687500  -1268362.500000
+   80.000000  -1563658.000000  296940.562500  -1266717.500000
+   90.000000  -1562118.125000  294620.968750  -1267497.125000
+  100.000000  -1564510.250000  295266.937500  -1269243.250000

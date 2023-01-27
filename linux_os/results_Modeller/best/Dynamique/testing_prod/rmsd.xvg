@@ -1,0 +1,20 @@
+# This file was created Fri Jan 27 18:08:15 2023
+# Created by:
+#                       :-) GROMACS - gmx rms, 2020.5 (-:
+# 
+# Executable:   /usr/local/gromacs2020.5/bin/gmx
+# Data prefix:  /usr/local/gromacs2020.5
+# Working dir:  /home/bio8/Projet/results_MODLER_2/best2/Dynamique/testing_prod
+# Command line:
+#   gmx rms -f md_prod.xtc -s md_prod.tpr -o rmsd.xvg
+# gmx rms is part of G R O M A C S:
+#
+# Good gRace! Old Maple Actually Chews Slate
+#
+@    title "RMSD"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "RMSD (nm)"
+@TYPE xy
+@ subtitle "C-alpha after lsq fit to C-alpha"
+   0.0000000    0.0000009
+ 100.0000000    0.2947001

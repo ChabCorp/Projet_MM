@@ -1,0 +1,20 @@
+; exemple fichier minimisation Gr20.5
+integrator      = steep    ; algorithme de minimisation utilise
+                           ; ici : steepest descent
+; Energy minimizing stuff
+emtol	        = 1000.0   ; critere de convergence (force maximum sur un atome)
+                           ; stop minimization when the maximum force < 1000.0 kJ/mol/nm
+emstep          = 0.01     ; pas pour commencer la minimisation (=1/10 angstrom)
+;
+nsteps          = 50000    ; nombre de pas de minimisation
+nstxout         = 1        ; ecriture des coord a chaque pas
+ns_type	        = grid	   ; Method to determine neighbor list (simple, grid)
+; non bonded stuff
+cutoff-scheme   = Verlet
+nstlist         =  10      ; frequence de mise a jour de la liste des voisins
+                           ; ici tous les 10 pas
+coulombtype     = cut-off  ; methode de calcul des interactions electrostatiques
+rlist           = 1.2      ; si d < rlist ; calcul tous les pas des interactions non liees
+rcoulomb        = 1.2      ; cutoff pour les interactions de Coulomb
+rvdw            = 1.2      ; cutoff pour les interactions de van der Waals
+pbc             = xyz      ; periodic boundary conditions
