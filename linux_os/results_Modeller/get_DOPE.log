@@ -1,0 +1,70 @@
+
+                         MODELLER 9.11, 2012/08/29, r8834
+
+     PROTEIN STRUCTURE MODELLING BY SATISFACTION OF SPATIAL RESTRAINTS
+
+
+                     Copyright(c) 1989-2012 Andrej Sali
+                            All Rights Reserved
+
+                             Written by A. Sali
+                               with help from
+           B. Webb, M.S. Madhusudhan, M-Y. Shen, M.A. Marti-Renom,
+                N. Eswar, F. Alber, M. Topf, B. Oliva, A. Fiser,
+                    R. Sanchez, B. Yerkovich, A. Badretdinov,
+                      F. Melo, J.P. Overington, E. Feyfant
+                 University of California, San Francisco, USA
+                    Rockefeller University, New York, USA
+                      Harvard University, Cambridge, USA
+                   Imperial Cancer Research Fund, London, UK
+              Birkbeck College, University of London, London, UK
+
+
+Kind, OS, HostName, Kernel, Processor: 4, Linux bio 5.4.0-137-generic x86_64
+Date and time of compilation         : 2012/08/29 11:36:00
+MODELLER executable type             : x86_64-intel8
+Job starting time (YY/MM/DD HH:MM:SS): 2023/01/26 15:24:40
+
+read_to_681_> topology.submodel read from topology file:        3
+
+getf_______W> RTF restraint not found in the atoms list:
+              residue type, indices:     7   667
+              atom names           : C     +N
+              atom indices         :  5285     0
+
+getf_______W> RTF restraint not found in the atoms list:
+              residue type, indices:     7   667
+              atom names           : C     CA    +N    O
+              atom indices         :  5285  5278     0  5286
+>> Model assessment by DOPE potential
+iatmcls_286W> MODEL atom not classified:  HIS:OXT  HIS
+preppdf_453W> No fixed restraints selected; there may be some dynamic ones.
+preppdf_454W> Restraints file was probably not read; use restraints.append().
+
+
+>> ENERGY; Differences between the model's features and restraints:
+Number of all residues in MODEL                   :      667
+Number of all, selected real atoms                :     5287    5287
+Number of all, selected pseudo atoms              :        0       0
+Number of all static, selected restraints         :        0       0
+COVALENT_CYS                                      :        F
+NONBONDED_SEL_ATOMS                               :        1
+Number of non-bonded pairs (excluding 1-2,1-3,1-4):  1114135
+Dynamic pairs routine                             : 1, NATM x NATM double loop
+Atomic shift for contacts update (UPDATE_DYNAMIC) :    0.390
+LENNARD_JONES_SWITCH                              :    6.500   7.500
+COULOMB_JONES_SWITCH                              :    6.500   7.500
+RESIDUE_SPAN_RANGE                                :        1    9999
+NLOGN_USE                                         :       15
+CONTACT_SHELL                                     :   15.000
+DYNAMIC_PAIRS,_SPHERE,_COULOMB,_LENNARD,_MODELLER :        T       F       F       F       T
+SPHERE_STDV                                       :    0.050
+RADII_FACTOR                                      :    0.820
+Current energy                                    :      -66074.9141
+
+
+
+
+<< end of ENERGY.
+DOPE score               : -66074.914062
+Total CPU time [seconds]                                 :       1.87

@@ -1,0 +1,55 @@
+
+                         MODELLER 9.11, 2012/08/29, r8834
+
+     PROTEIN STRUCTURE MODELLING BY SATISFACTION OF SPATIAL RESTRAINTS
+
+
+                     Copyright(c) 1989-2012 Andrej Sali
+                            All Rights Reserved
+
+                             Written by A. Sali
+                               with help from
+           B. Webb, M.S. Madhusudhan, M-Y. Shen, M.A. Marti-Renom,
+                N. Eswar, F. Alber, M. Topf, B. Oliva, A. Fiser,
+                    R. Sanchez, B. Yerkovich, A. Badretdinov,
+                      F. Melo, J.P. Overington, E. Feyfant
+                 University of California, San Francisco, USA
+                    Rockefeller University, New York, USA
+                      Harvard University, Cambridge, USA
+                   Imperial Cancer Research Fund, London, UK
+              Birkbeck College, University of London, London, UK
+
+
+Kind, OS, HostName, Kernel, Processor: 4, Linux bio 5.4.0-137-generic x86_64
+Date and time of compilation         : 2012/08/29 11:36:00
+MODELLER executable type             : x86_64-intel8
+Job starting time (YY/MM/DD HH:MM:SS): 2023/01/26 15:24:42
+
+read_to_681_> topology.submodel read from topology file:        3
+
+getf_______W> RTF restraint not found in the atoms list:
+              residue type, indices:     7   667
+              atom names           : C     +N
+              atom indices         :  5285     0
+
+getf_______W> RTF restraint not found in the atoms list:
+              residue type, indices:     7   667
+              atom names           : C     CA    +N    O
+              atom indices         :  5285  5278     0  5286
+>> Model assessment by GA341 potential
+
+Surface library          : /usr/lib/modeller9.11/modlib/surf5.de
+Pair library             : /usr/lib/modeller9.11/modlib/pair9.de
+Chain identifier         : _
+% sequence identity      :    14.983000
+Sequence length          :          667
+Compactness              :     0.174648
+Native energy (pair)     :   308.919350
+Native energy (surface)  :    20.734608
+Native energy (combined) :     6.958253
+Z score (pair)           :    -2.895095
+Z score (surface)        :    -3.630801
+Z score (combined)       :    -4.493831
+GA341 score              :     0.278961
+
+Total CPU time [seconds]                                 :      45.43
