@@ -1,11 +1,35 @@
-    0.000000  301.042755
-   10.000000  301.665527
-   20.000000  299.293945
-   30.000000  299.652893
-   40.000000  300.275696
-   50.000000  300.413605
-   60.000000  299.776123
-   70.000000  300.604034
-   80.000000  300.698120
-   90.000000  299.051666
-  100.000000  300.483185
+# This file was created Fri Jan 27 18:08:03 2023
+# Created by:
+#                      :-) GROMACS - gmx energy, 2020.5 (-:
+# 
+# Executable:   /usr/local/gromacs2020.5/bin/gmx
+# Data prefix:  /usr/local/gromacs2020.5
+# Working dir:  /home/bio8/Projet/results_MODLER_2/best2/Dynamique/testing_prod
+# Command line:
+#   gmx energy -f md_prod.edr -o temperature.xvg
+# gmx energy is part of G R O M A C S:
+#
+# GRoups of Organic Molecules in ACtion for Science
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(K)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Temperature"
+    0.000000  300.851440
+   10.000000  298.841766
+   20.000000  299.381836
+   30.000000  300.622101
+   40.000000  299.065247
+   50.000000  300.001343
+   60.000000  299.457092
+   70.000000  299.209351
+   80.000000  301.233093
+   90.000000  298.879913
+  100.000000  299.535278
