@@ -1,20 +1,3 @@
-# This file was created Fri Jan 27 18:08:21 2023
-# Created by:
-#                       :-) GROMACS - gmx rmsf, 2020.5 (-:
-# 
-# Executable:   /usr/local/gromacs2020.5/bin/gmx
-# Data prefix:  /usr/local/gromacs2020.5
-# Working dir:  /home/bio8/Projet/results_MODLER_2/best2/Dynamique/testing_prod
-# Command line:
-#   gmx rmsf -f md_prod.xtc -s md_prod.tpr -o rmsf.xvg -res
-# gmx rmsf is part of G R O M A C S:
-#
-# Good gRace! Old Maple Actually Chews Slate
-#
-@    title "RMS fluctuation"
-@    xaxis  label "Residue"
-@    yaxis  label "(nm)"
-@TYPE xy
     1   0.2243
     2   0.1862
     3   0.1440
